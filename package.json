@@ -1,0 +1,14 @@
+{
+  "name": "@jdbi/open-query-stdio",
+  "private": true,
+  "version": "1.2.0",
+  "description": "京东自营 BI 只读 MCP stdio 接入，连接已有服务器并沿用查询权限",
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "bin": { "jdbi-mcp": "./cli.mjs" },
+  "repository": { "type": "git", "url": "git+https://github.com/2689508458/jdbi-mcp.git" },
+  "homepage": "https://github.com/2689508458/jdbi-mcp#readme",
+  "files": ["cli.mjs", "stdio.mjs", "config.mjs", "connection.mjs", "setup.mjs", ".env.example", "README.md"],
+  "scripts": { "test": "node --test test/stdio.test.mjs test/config.test.mjs test/cli.test.mjs" },
+  "dependencies": { "@modelcontextprotocol/sdk": "1.30.0" }
+}
